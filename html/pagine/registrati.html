@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/registrati.css?v=3.3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css?v=1.0">
+
+    <title>Registrazione - Convention</title>
+    <style>
+        
+    </style>
+</head>
+<body class="sfondo-registrazione">
+    <div class="container-user">
+        <i class="logo-user fa fa-circle-user"></i>
+    </div>
+
+    <div class="container-registrazione">
+        <div class="container">
+            <h2 class="center-text">Registrati</h2>
+            <form action="../../php/autenticazione/registrati.php" method="POST">
+                <input type="text" name="nome" class="input-field" placeholder="Inserisci il tuo nome...">
+                <input type="text" name="cognome" class="input-field" placeholder="Inserisci il tuo cognome...">
+                <input type="text" name="email" class="input-field" placeholder="Inserisci la tua email...">
+                <input type="password" name="password" class="input-field" placeholder="Inserisci la tua password...">
+                <input type="password" name="password2" class="input-field" placeholder="Reinserisci la tua password...">
+                <input type="submit" value="Registrati" class="submit-btn">
+            </form>
+            <br>
+            <p class="center-text">Hai già un account? <a href="./index.html" class="link">Vai alla login</a></p>
+        </div>
+    </div>
+</body>
+</html>
